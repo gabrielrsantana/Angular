@@ -1,0 +1,12 @@
+interface propriedadesCarro{
+    
+    marca:string
+}
+//interface é como uma regra
+class Carro implements propriedadesCarro{
+    marca!:string;
+
+    constructor(marca:string){
+
+    }
+}

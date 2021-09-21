@@ -1,0 +1,26 @@
+na pasta do p´rojeto
+npm ini -y
+
+( modo desenvolvedor)
+npm install typescript -D    
+
+ (abreviacao de typescript)
+npx tsc -init
+
+ (alteracoes n precisa reinicializar o arquico)                  
+npm install ts-node-dev -D     
+
+ Crie um arquivo index.ts
+
+
+ir no arquivo package.json , na linha "test" "echo \"Error: no test specified\" && exit 1" mudar pra: 
+"dev":"tsnd --transpile-only --ignore-watch node_modules index.ts"
+
+
+entra na pasta do projeto cmd:(ignora o node_modules,porque ele ja entende javascript, sempre pra desenvolver,ai ignora):
+tsnd --transpile-only --ignore-watch node_modules index.ts
+
+depois:(dev é o nome da aplicacao "scripts" no package.json,que mudamos a linha err do transpilação):
+npm run dev
+
+

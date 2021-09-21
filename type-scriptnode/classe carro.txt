@@ -1,0 +1,56 @@
+class Carro{
+   // recomendam usar nome!=string pra ser undefined
+    // private nome:string 
+    // private modelo:string
+    // private ano:number
+    //pode se fazer direto no contructor
+
+    constructor(private nome:string,private modelo:string,private ano:number){
+        this.nome = nome;
+        this.modelo = modelo;
+        this.ano = ano;
+    }//
+
+    escreverPropriedades(){
+        console.log("Nome =",this.nome);
+        console.log("modelo =",this.modelo);
+        console.log("ano=",this.ano);
+    }
+
+    //usando encapsulamento usando getter e setters
+    getNome(){
+        return this.nome;
+    }
+    getModelo(){
+        return this.modelo;
+    }
+    getAno(){
+        return this.ano;
+    }
+    
+    setNome(nome:string){
+        this.nome = nome;
+    }
+    setModelo(model:string){
+        this.modelo =model;
+    }
+    setAno(ano:number){
+        this.ano = ano;
+    }
+
+
+
+}//classe
+let ferrari = new Carro("Ferrari","458",2010);
+
+// ferrari.escreverPropriedades();
+
+// ferrari.setNome('porsch');
+console.log("usando get:"+ ferrari.getNome());
+console.log("atributos:");
+console.log(ferrari.getNome());
+console.log(ferrari.getModelo());
+console.log(ferrari.getAno());
+
+
+
